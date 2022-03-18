@@ -16,7 +16,7 @@ $samochod1->zapisz($samochod1->marka,
                 );
 
 
-
+//dodatkowa zmiana
 echo "XXXXXXXXXXXXXXXXXXXXXXXXXXX<BR><BR>";
 
 $samochod1->odczyt_vin("aaaaaaaaaaaaaaaaa");
