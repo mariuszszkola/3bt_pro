@@ -18,9 +18,10 @@
 
 <div class="zawartosc">
     <div class="lewa">
-    <a href="form1.html"><div class="menu">
+        
+    <div class="menu">
         <ul>
-        <li>Dodaj samochód</li>
+        <li class="button"><a class="link" href="form1.html">Dodaj samochód</a></li>
         </ul>
         </div> <!--end menu --></a>
 

@@ -1,0 +1,61 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: auto;
+    margin: 0 0 0 0;
+}
+
+.gora{
+    height: 50px;
+
+    width: 100%;
+    background-color: rgb(0, 255, 255);
+
+}
+
+.zawartosc{display: flex;
+
+}
+
+.lewa{
+    width: 15%;
+    background-color: aquamarine;
+}
+
+.menu{  
+    text-align: left;
+}
+
+.link{
+    
+    text-decoration: none;
+    color: red;
+    transition: 1s;
+}
+
+
+.link:hover{
+    
+    text-decoration: none;
+    color: rgba(123, 255, 0, 0.5);
+}
+
+
+.button {
+    display: block;
+
+}
+
+
+.prawa{
+
+    width: 15%;
+    background-color: aquamarine; 
+
+}
+
+.srodek{    width: 70%;
+            background-color: bisque;
+
+
+
+}
