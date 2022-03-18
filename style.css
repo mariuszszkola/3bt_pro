@@ -17,19 +17,24 @@
 }
 
 .lewa{
-    width: 15%;
+    width: 25%;
     background-color: aquamarine;
 }
 
 .menu{  
     text-align: left;
+    transform: translate(-30px, 0px);
 }
 
 .link{
     
     text-decoration: none;
+    list-style-type: none;
     color: red;
     transition: 1s;
+    margin: 0 0;
+    padding: 0;
+    text-align: left;
 }
 
 
@@ -41,8 +46,12 @@
 
 
 .button {
+    list-style-type: none;
     display: block;
-
+    transition: 1s;
+    margin: 0 0;
+    padding: 0;
+    text-align: left;
 }
 
 
