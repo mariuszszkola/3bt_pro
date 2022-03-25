@@ -21,14 +21,26 @@
         
     <div class="menu">
         <ul>
-        <?php require "menu.php"?>    
+        <?php require "menu.php"?>     
     </ul>
         </div> <!--end menu --></a>
 
 
 
     </div>
-    <div class="srodek"><p>ddd</p> </div>
+    <div class="srodek"><p>
+
+    <?php
+    require "11o.php";
+    $s = new samochod("x","x",1111, 11,"1.1",111, "123123123432222",1223 , 22, 2);
+
+
+    $s -> odczyt();
+    
+    ?>
+
+
+    </p> </div>
     
     <div class="prawa"><p>ddd</p></div>
     
