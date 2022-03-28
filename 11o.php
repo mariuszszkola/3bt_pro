@@ -61,7 +61,7 @@ class samochod{
 
     public function odczyt_vin($vin){
         $plik = fopen("dane.txt","r");
-
+        $z=0;
         $dane = fread($plik,filesize("dane.txt"));
         $dane1 = explode("\n",$dane);
         $i=1;
@@ -69,6 +69,7 @@ class samochod{
          while ($i < $wielkosc){
           $pos = strpos($dane1[$i], $vin);
           if($pos != false){
+              $z=1;
             $tab = explode(",", $dane1[$i]);
             $this->marka = $tab[0]; 
             $this->model = $tab[1];
@@ -89,7 +90,7 @@ class samochod{
           $i++;
          }
      
-  
+         if ($z==0) echo "brak vin";
         
          } 
 
