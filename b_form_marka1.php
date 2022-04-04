@@ -2,7 +2,7 @@
 require 'b_samochod.php';
 
 
-
+// Pobieranie danych z formularza 
 $nazwa = $_POST['marka']; 
 $rok = $_POST['rok']; 
 $kraj = $_POST['kraj']; 
