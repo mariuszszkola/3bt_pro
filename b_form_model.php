@@ -21,34 +21,36 @@
         
     <div class="menu">
         <ul>
-        <?php require "menu.php"?>    
-    </ul>
+            <?php require "menu.php"?>  
+        </ul>
         </div> <!--end menu --></a>
 
 
 
     </div>
-    <div class="srodek"><p>
-    
+    <div class="srodek">
+        
     <?php
-require 'b_samochod.php';
+    require 'b_samochod.php';
+    $s1 = new samochod();
+
+    
+    
+    ?>
 
 
-// Pobieranie danych z formularza 
-$nazwa = $_POST['marka']; 
-$rok = $_POST['rok']; 
-$kraj = $_POST['kraj']; 
+        <form action="b_form_model1.php" method="POST">
+            
 
-$samochod1 = new samochod();
-
-$samochod1->zapisz_marka($nazwa,$rok,$kraj);
-
-
-
-?>
-
-
-    </p> </div>
+        <p>MARKA: </p><?php $s1->pobierz_marke(); ?> 
+               <p>MODEL:</p> <input type="text" name="model" pattern="[A-Za-z0-9]{2,99}" required>
+           
+            
+            <input type="submit" value="Wyślij">
+            
+            </form>
+    
+    </div>
     
     <div class="prawa"><p>ddd</p></div>
     
@@ -58,6 +60,8 @@ $samochod1->zapisz_marka($nazwa,$rok,$kraj);
     
 </body>
 </html>
+
+
 
 
 

@@ -35,13 +35,16 @@ require 'b_samochod.php';
 
 
 // Pobieranie danych z formularza 
-$nazwa = $_POST['marka']; 
-$rok = $_POST['rok']; 
-$kraj = $_POST['kraj']; 
+$id_marka = $_POST['ma'];
+$model = $_POST['model'];
 
-$samochod1 = new samochod();
+echo $id_marka . ' ' . $model;
 
-$samochod1->zapisz_marka($nazwa,$rok,$kraj);
+
+
+ $samochod1 = new samochod();
+
+ $samochod1->zapisz_model($id_marka,$model);
 
 
 
